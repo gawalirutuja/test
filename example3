@@ -1,0 +1,38 @@
+package test1;
+
+public class Example3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int n1 = 60;
+        int n2= 50;
+        int EvenSum=0;
+        int Oddsum =0;
+        while(n2<=n1)
+		{
+            if(n2%2==0)
+			{
+                System.out.print("Even Number: "+n2+"  ");
+                EvenSum+=n2;
+            }
+            else{
+                System.out.println("Odd Number : "+n2+"  ");
+                Oddsum+=n2;
+            }
+            n2++;
+        }
+
+	}
+
+}
+
+
+/*
+ output
+Even Number: 50  Odd Number : 51  
+Even Number: 52  Odd Number : 53  
+Even Number: 54  Odd Number : 55  
+Even Number: 56  Odd Number : 57  
+Even Number: 58  Odd Number : 59  
+Even Number: 60  
+*/
