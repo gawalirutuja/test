@@ -1,0 +1,45 @@
+package test1;
+
+import java.util.Scanner;
+
+public class Example2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+        int count = 0;
+        System.out.println("Enter number:");
+        int no = sc.nextInt();
+        if(no > 0)
+		{
+           while(no !=0)
+		   {
+               no = no/10;
+               count++;
+		   }
+        }
+		else 
+		{
+            System.out.println("Input should be positive number.");
+        }
+        System.out.println("Number of digits:"+count);
+
+	}
+
+}
+
+
+/*
+ output
+ 
+ Enter number:
+-123
+Input should be positive number.
+Number of digits:0
+
+Enter number:
+2210
+Number of digits:4
+
+ */
+
