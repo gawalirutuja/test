@@ -1,0 +1,56 @@
+package test1;
+
+import java.util.Scanner;
+
+public class Example1 {
+
+	public static void main(String[] args) {
+		final int correct_pin=02;
+		int guess_pin;
+		int count = 0;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		for(int i = 1; i<=3; i++)
+		{
+			System.out.println("Guess the pin of the correct pin of the account: ");
+			guess_pin = sc.nextInt();
+			
+			if (guess_pin == correct_pin)
+			{
+				System.out.println("Correct, welcome back.");
+				break;
+			}
+			else{
+				count++;
+				if(count >= 3)
+				{
+					System.out.println("Sorry but you have been locked out.");
+					break;
+				}				
+			
+				System.out.println("Incorrect, try again.");
+				
+				
+			}
+			
+		}	
+
+	}
+
+}
+
+/*
+output
+Guess the pin of the correct pin of the account: 
+01
+Incorrect, try again.
+Guess the pin of the correct pin of the account: 
+7
+Incorrect, try again.
+
+Guess the pin of the correct pin of the account: 
+02
+Correct, welcome back.
+
+*/
